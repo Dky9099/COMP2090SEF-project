@@ -1,4 +1,4 @@
- from models import Student, Instructor, Course
+from models import Student, Instructor, Course
 from engine import ManagementSystem
 
 def run_demo():
@@ -33,7 +33,7 @@ def run_demo():
         print("Available Instructors: ")
         for i, inst in enumerate(instructors):
             print(f"{i+1}. {inst.name} (ID: {inst._user_id})")
-        choice = int(input("Please enter course choice number: 1,2,3 e.g.")) - 1
+        choice = int(input("Enter number: ")) - 1
         chosen_in = instructors[choice]
 
         cour = Course(c_code, c_title, chosen_in)
